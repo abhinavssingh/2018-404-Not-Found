@@ -8,17 +8,12 @@ Examples of things to include are the following.
 
 ## Summary
 
-**Category:** Hackathon Category
+**Category:** XConnect
 
-What is the purpose of your module? What problem does it solve and how does it do that?
+The purpose of this module is to display page views of an Item in Sitecore content tree through gutter icon if that item have page views in xDB collection. We are getting page views of an item through xConnect from xDB.
 
 ## Pre-requisites
-
-Does your module rely on other Sitecore modules or frameworks?
-
-- List any dependencies
-- Or other modules that must be installed
-- Or services that must be enabled/configured
+As we did not had any records in xDB. So, we have created an utility which would create records in xDB. We can run this from http://<Your Instance Name>/Sitecore/Admin/AddXdbcontact.aspx.
 
 ## Installation
 
@@ -30,27 +25,18 @@ Provide detailed instructions on how to install the module, and include screensh
 
 ## Configuration
 
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
 
-Remember you are using Markdown, you can provide code samples too:
-
-```xml
-<?xml version="1.0"?>
-<!--
-  Purpose: Configuration settings for my hackathon module
--->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
-</configuration>
-```
 
 ## Usage
 
-Provide documentation  about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+This module will display page views of an item in Sitecore tree if that item exist under pageevent into xDB collection. 
+
+How to enable?
+1. Right click on the Sitecore tree area.
+2. Select Page views.
+3. Refresh Sitecore Contnet.
+4. A blue color icon would be disaplyed on left side of an item.
+5. Upon hovering on blue icon it will display page view count.
 
 Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
 
